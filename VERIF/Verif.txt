@@ -1,0 +1,26 @@
+///// 1. vérifier que l'event scheduler est actif sur mysql /////
+
+SHOW VARIABLES WHERE VARIABLE_NAME = 'event_scheduler';
+
+si il est sur OFF alors il faut le mettre sur ON :
+SET GLOBAL event_scheduler = ON;
+ou 
+event_scheduler = ON dans le fichier mysql.ini dans la section [mysqld]
+
+///// 2. Vérifier qu'il y a tous les triggers /////
+
+avec la commande : show triggers\G
+    - AFFECTATION_MONITEUR - insert sur la table planning
+    - AFFECTATION_VEHICULE - insert sur la table planning
+    - HASH_PASSWORD - insert sur la table user
+    - HASH_PASSWORD_UPDATE - update sur la table user
+    - INSERT_ELEVE - insert sur la table user (il n'y en a pas pour le moniteur car les infos dans la table moniteur sont renseignées déjà par l'admin donc il y a 2 insert dans le php (user et moniteur))
+
+///// 3. Rappel des différents état que peut avoir une ligne dans planning /////
+-En attente user
+-En attente moniteur
+-Valider
+-Effectuer
+-Refuser
+
+mysqldump --events --routines --triggers -u root autoecole > fichier.sql

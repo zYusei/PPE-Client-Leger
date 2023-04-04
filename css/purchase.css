@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+p,
+h2,
+label {
+    color: #3b4347;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p,
+h2 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 15px;
+    font-size: 22px !important;
+}
+
+#flash {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    padding: 10px;
+    background-color: green;
+    display: none;
+}
+
+#flash p {
+    color: white;
+    transform: translateY(-20%);
+}
+
+
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+
+.container {
+    width: 400px;
+    height: 510px !important;
+    /* background-color: green; */
+    border: 1px solid black;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.cards {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mastercard {
+    margin-left: 10px;
+}
+
+
+button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #54c7c3;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+}
+
+button:hover {
+    background-color: #568ca7;
+    cursor: pointer;
+}
+
+button p {
+    position: relative;
+    top: -4px;
+}
+
+#gif {
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #eef2f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h3 {
+    font-weight: 100;
+    opacity: 0.6;
+    margin-top: 5px !important;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(120, 67, 52); */
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+.d-flex-label {
+    display: flex;
+}
+
+.d-flex-label label {
+    width: 50%;
+}
+
+.d-flex input {
+    width: 100%;
+}
+
+.d-flex input:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.d-flex input:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.381);
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 10px;
+}

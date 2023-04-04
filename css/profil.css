@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.main {
+    background-color: #f9f9f9;
+    width: 80%;
+    height: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.profil-container {
+    margin-left: 50px;
+    width: 350px;
+    height: 350px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+}
+
+.profil-img img {
+    width: 170px;
+}
+
+.nom-prenom {
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.date-inscri {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #9398a2;
+}
+
+.btn-reset-password {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background-color: #2b8c52;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.infos-container {
+    margin-right: 50px;
+    width: 55%;
+    height: 350px;
+    background-color: blue;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.infos-container p {
+    margin: 0;
+}
+
+.ligne {
+    display: flex;
+    padding: 15px;
+    padding-left: 0px;
+    padding-right: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.infos-container .ligne:last-child {
+    border-bottom: none;
+}
+
+.ligne .label {
+    width: 150px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ligne .value {
+    color: #9398a2;
+}
+
+
+@media screen and (max-width :1150px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infos-container {
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .profil-container {
+        margin-left: 0;
+        max-width: 350px;
+        width: 90%;
+    }
+}
+
+.body {
+    flex: 1;
+}
+
+#old_eye_slash,
+#old_eye_slash2 {
+    display: none;
+}
